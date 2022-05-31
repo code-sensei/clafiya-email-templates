@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>Another</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 32px !important;
+        }
+
+        p > span {
+            display: block;
+            margin: 5px 0px;
+        }
+
+        button {
+            height: 40px;
+            min-width: 100px;
+            box-shadow: none;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 20px;
+        }
+
+        button.blue {
+            background-color: #104a88;
+            color: #ffffff;
+        }
+
+        #email-container {
+            min-width: none;
+            max-width: 1000px !important;
+            width: 1000px;
+            margin: 50px auto;
+            background-color: #363636;
+        }
+
+        .email-body {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .email-top {
+            background: linear-gradient(118.92deg, #D8EBFF 26.18%, #F5CDFF 96.85%);
+            border-radius: 18px 18px 0px 0px;
+            max-width: 100%;
+            padding: 80px 120px 80px 60px;
+            min-height: 100px;
+        }
+
+        .email-bottom {
+            padding: 50px 120px 80px 60px;
+            background: #FFFFFF;
+            min-height: 100px;
+        }
+
+        .email-footer {
+            padding: 60px 120px 60px 60px;
+            background: #FFFFFF;
+            border-radius: 0px 0px 18px 18px;
+            min-height: 100px;
+        }
+
+        .email-title {
+
+        }
+
+        .email-segment {
+            margin-top: 20px;
+        }
+
+        .email-content {
+            margin-top: 50px;
+        }
+
+        .text {
+            color: #363636;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .highlight {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .purple {
+            color: #ad44c7;
+        }
+
+        .blue {
+            color: #104a88;
+        }
+
+        @media only screen and (max-width: 834px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 834px !important;
+            }
+
+            .email-top {
+                padding: 60px 120px 60px 60px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 120px 60px 60px;
+            }
+
+            .email-footer {
+                padding: 60px 120px 60px 60px;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 768px !important;
+            }
+
+            .email-top {
+                padding: 60px 120px 60px 60px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 120px 60px 60px;
+            }
+
+            .email-footer {
+                padding: 60px 120px 60px 60px;
+            }
+
+        }
+
+        @media only screen and (max-width: 430px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 430px !important;
+            }
+
+            .email-top {
+                padding: 20px 30px 20px 15px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 30px 20px 15px;
+            }
+
+            .email-footer {
+                padding: 15px 30px 15px 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 412px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 412px !important;
+            }
+
+            .email-top {
+                padding: 20px 30px 20px 15px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 30px 20px 15px;
+            }
+
+            .email-footer {
+                padding: 15px 30px 15px 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 395px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 390px !important;
+            }
+
+            .email-top {
+                padding: 20px 30px 20px 15px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 30px 20px 15px;
+            }
+
+            .email-footer {
+                padding: 15px 30px 15px 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 360px) {
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            #email-container {
+                min-width: none;
+                max-width: 360px !important;
+            }
+
+            .email-top {
+                padding: 20px 30px 20px 15px;
+            }
+
+            .email-bottom {
+                padding: 12.5px 30px 20px 15px;
+            }
+
+            .email-footer {
+                padding: 15px 30px 15px 15px;
+            }
+
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .text {
+                color: #000000 !important;
+            }
+        }
+    </style>
+</head>
+<body id='email-container'>
+    <div class="email-body">
+        <div class="email-top">
+            <h1 class="text email-title">
+                Welcome to Clafiya! The beginning of a better primary healthcare experience
+            </h1>
+            <div class="email-segment">
+                <p class="text email-content">
+                    <span class="text bold">
+                        Spend less time in traffic and in the waiting room.
+                    </span>
+                    <span class="text">
+                        Instantly connect to a health practitioner near you to receive quality care when and where you need it.
+                    </span>
+                </p>
+            </div>
+            <div class="email-segment">
+                <p class="text email-content">
+                    <span class="text bold">
+                        Never miss an appointment.
+                    </span>
+                    <span class="text">
+                        Receive emails and text reminders - and manage your appointment if something changesAccess your medical history on the go.
+                    </span>
+                </p>
+            </div>
+            <div class="email-segment">
+                <p class="text email-content">
+                    <span class="text bold">
+                        Access your medical history on the go.
+                    </span>
+                    <span class="text">
+                        Have access to your medical history when visiting a new health practitioner.
+                    </span>
+                </p>
+            </div>
+            <div class="email-segment">
+                <p class="text email-content">
+                    <span class="text">
+                        <span class="bold">Stay Safe And Healthy!</span> Your friends at Clafiya 😊.  We’ll like to hear from you, what as your experience like using our product, <span class="highlight purple">Leave a feedback.</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="email-bottom">
+            <p class="text email-content">
+                <span class="text">
+                    This email was sent to <span class="highlight blue">customersupport@clafiya.com.</span> If you’d rather not receive this kind of email, you can <span class="hint blue">unsubscribe or manage your email preferences.</span>
+                </span>
+
+                <span class="text" style="margin-top: 50px;">Email Support: team@clafiya.com</span>
+            </p>
+        </div>
+        <div class="email-footer">
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
